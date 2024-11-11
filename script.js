@@ -1,3 +1,3 @@
-header(){
-    document.getElementById("title").innerHTML = "BOO!"
+function hidden(){
+    document.getElementById("demo").innerHTML = "Hello World!";
 }

@@ -5,11 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./script.js">
 </head>
+<script>
+    function hidden(){
+    document.getElementById("demo").innerHTML = "Hello World!";
+}
+</script>
 <body>
     <header>
-        <h1 id = "title">Interactive Website</h1>
-        <button onclick="header()">Click me if you dare!!!!!</button>
+        <h1>Interactive Website</h1>
+        <button onclick="hidden()">Click me if you dare!!!!!"</button>
+        <p id="demo"></p>
     </header>
 </body>
 </html>
