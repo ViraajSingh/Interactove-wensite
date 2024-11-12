@@ -2,3 +2,31 @@ header{
     text-align: center;
     color: blue;
 }
+
+.funny{
+    padding: 34px;
+    text-align: center;
+    color: orange;
+    font-size: 50px;
+    position: fixed;
+    top: 36px;
+    left: 20%;
+}
+
+.breakWeb{
+    display: flex;
+    float: left;
+    color: purple;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900;
+    font-size: 300px;
+}
+
+.spooky{
+    text-align: center;
+    color: orange;
+    font-size: 30px;
+    position: absolute;
+    top: 0;
+    left: 90%;
+}

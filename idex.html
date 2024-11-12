@@ -1,22 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./script.js">
-</head>
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="./script.js">
+<html>
+<body>
+<header>
+        <h1>Interactive Website</h1>
+        <button onclick="myFunction()">Click me if you dare!!!</button>
+</header>
+<main>
+    <p class="funny" >Everything that you can click will change somethign about the textttt have fun </p>
+    <button class= "spooky" ondblclick="helpMe()">double click me for cookiessss</button>
+    <p class= "breakWeb" id="help"></p>
+</main>
+
+
+<p id="demo"></p>
+
+
 <script>
-    function hidden(){
-    document.getElementById("demo").innerHTML = "Hello World!";
+function myFunction() {
+  document.getElementById("demo").innerHTML = "BOO!!";
+}
+
+function helpMe(){
+    document.getElementById("help").innerHTML = "HOPE UR COMPUTER DOSNT CRASH HAHAHAHAHAHAHA I AM SO EVILLLL"
 }
 </script>
-<body>
-    <header>
-        <h1>Interactive Website</h1>
-        <button onclick="hidden()">Click me if you dare!!!!!"</button>
-        <p id="demo"></p>
-    </header>
+
 </body>
 </html>
