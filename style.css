@@ -30,3 +30,89 @@ header{
     top: 0;
     left: 90%;
 }
+.container{
+    display: flex;
+    width: 100%;
+    /* align-content: center; */
+    justify-content: center;
+}
+/* This is a header that is in a container in which I call the display flex again becuase it is needed and it also allows me to center the content vertically becuase I used the align items to be center, along with this I used the justified content to be centered which allow me to center the content inside horizontally.*/
+
+.container > .header{
+    display: flex;
+     align-items: center;
+    justify-content: center;
+
+}
+/* A problem with flex is that whatever my content is will be placed right next to each other, the use of padding allowed me to say that anything in a container which is in the header which has a img tag will be shiffted off by 20px which proved a gap from the text and the image logo */
+.container > .header >img{
+    padding: 20px;
+}
+/*  Again with the use of display flex to make sure I can use everythign in which I used align-iteams to be center to make sure that it will be placed in the center on the horizontal plane. Lastly I used a space evenly to make sure that all the content inside of the header, with the space given, will be equal in the space taken up */
+.nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 20px;
+    text-decoration: none;
+    background-color: rgb(255, 255, 142);
+}
+/* This be sued to make it easier for me to seperate the main into the section tag and the aside tag*/
+.main{
+    display: flex;
+}
+/* First I call the main tag used early but the specifally containing a new tag called section in whoch it will contain the majority of the content. Then I use the flex grow to be 1 to make sure it takes up the majority of that row, in which it will take up all thay space. Then I make sure that the minium value of the section tag will never chnage and this is done by making the flex-basis=100%  */
+.main >.section{
+    display: flex;
+    /* width: 100%; */
+    flex-grow: 1;
+    flex-basis: 100%;
+    background-color: rgba(135, 135, 249, 0.454);
+}
+/* Now in the aside tag I called the display flex to make sure everythign work. THen I want to make sure that this will be smaller than section in which I called it to have only a minium value of 25% to make sure that no matter what iut will always be on the side and smaller than the section tag since it does not have the main content  */
+.main > .aside{
+    display: flex;
+    flex-basis: 25%;
+    background-color: rgb(255, 157, 157);
+}
+/* In this I make the footer which I call display flex which then allows me to use the align-items center to make sure everythign up and down to be centered in the main. Then with the justifed-content to make sure the space evenly in which the content is spaced evenly in the area given  */
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* This is the border for just the footer in which anything present in the footer that has either a img or a p tag will have a border aroudn iot in the color orange, yes it such a color contrast but me like orange */
+.footer > img, .footer > p{
+    border: 10px orange solid;
+}
+/* This is for the last part in which I want it to be in the center of row which is done by calling center for both justified content and align content. I also add the font-weight to be bold which allows me to make sure that the content inside to be bolded which makes it stand out since it is already small*/
+.contact{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-weight: bold;
+}
+.horse{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo{
+    border-radius: 10px;
+}
+
+.footer{
+    padding-top: 25px;
+}
+
+.normal{
+    display: none;
+}
+
+.change{
+    display: block;
+    background-color: blue;
+    color: white;
+}
